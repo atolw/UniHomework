@@ -1,5 +1,4 @@
-// lr2.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// yap yap yap 
 #define _USE_MATH_DEFINES
 
 #include <iostream>
