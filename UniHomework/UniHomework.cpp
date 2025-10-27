@@ -16,4 +16,6 @@ int main()
     cout << endl;
 
     cout << "The statement is " << (a > 0 || b > 0 || c >> 0);
+
+    // 67
 }
