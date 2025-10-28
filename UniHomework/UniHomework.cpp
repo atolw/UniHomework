@@ -1,61 +1,21 @@
-// yap yap yap 
-#define _USE_MATH_DEFINES
+// ConsoleApplication1.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
 
 #include <iostream>
-#include <iomanip>
-#include <cmath>
-#include <windows.h>
-
-
 using namespace std;
 int main()
 {
-	SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
-    // 1
+    // –ó–∞–¥–∞–Ω–æ —Ç—Ä–∏ —Ü—ñ–ª–∏—Ö —á–∏—Å–ª–∞: A, B, C. –ü–µ—Ä–µ–≤—ñ—Ä–∏—Ç–∏ —ñ—Å—Ç–∏–Ω–Ω—ñ—Å—Ç—å –≤–∏—Å–ª–æ–≤–ª—é–≤–∞–Ω–Ω—è: ¬´–•–æ—á–∞ –± –æ–¥–Ω–µ –∑ —á–∏—Å–µ–ª A, B, C –ø–æ–∑–∏—Ç–∏–≤–Ω–µ¬ª. 
 
-	double a, b, c, x, F;
-	bool defined = false;
-	cout << "Enter a, b, c, x: \n";
-	cin >> a >> b >> c >> x;
+    int a, b, c;
 
-	if (x < 0 && b != 0)
-	{
-		F = -a * pow(x, 2) + b;
-		defined = true;
-	}
-	else if (x > 0 && b == 0 && (x - c) != 0)
-	{
-		F = x / (x - c) + 5.5;
-		defined = true;
-	}
-	else if (c != 0)
-	{
-		F = x / -c;
-		defined = true;
-	}
-	(defined) ? cout << "F = " << fixed << setprecision(2) << F << endl:
-		cout << "F is undefined" << endl;
+    cout << boolalpha << "Enter a, b, c in order: ";
+    cin >> a >> b >> c;
+    cout << "The statement is ";
+        (a > 0 || b > 0 || c >> 0) ? cout << true : cout << false;
+    cout << endl;
 
-	// 2
+    cout << "The statement is " << (a > 0 || b > 0 || c >> 0);
 
-	int mark;
-	cout << "Enter mark: ";
-	cin >> mark;
-	switch (mark)
-	{
-	case 1:	cout << "Œ‰ËÌËˆˇ.";     break;
-	case 2:	cout << "ƒ‚≥ÈÍ‡.";	    break;
-	case 3:	cout << "“≥ÈÍ‡.";	    break;
-	case 4:	cout << "◊ÂÚ‚≥Í‡.";    break;
-	case 5:	cout << "œ'ˇÚ≥Í‡.";    break;
-	case 6:	cout << "ÿ≥ÒÚÍ‡.";	    break;
-	case 7:	cout << "—≥ÏÍ‡.";	    break;
-	case 8:	cout << "¬≥Ò≥ÏÍ‡.";	    break;
-	case 9:	cout << "ƒÂ‚'ˇÚÍ‡.";    break;
-	case 10:cout << "ƒÂÒˇÚÍ‡.";	    break;
-	case 11:cout << "Œ‰ËÌ‡‰ˆˇÚÍ‡.";	break;
-	case 12:cout << "ƒ‚‡Ì‡‰ˆˇÚÍ‡.";	break;
-	default:cout << "«Ì‡˜ÂÌÌˇ Óˆ≥ÌÍË ÌÂ ‚ ‰≥‡Ô‡ÁÓÌ≥.";	break;
-	}
+    // 67
 }
