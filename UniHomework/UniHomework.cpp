@@ -1,21 +1,20 @@
-// ConsoleApplication1.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
+// Online C++ compiler to run C++ program online
 #include <iostream>
+#include <algorithm>
+#include <string>
+#include <clocale>
+
 using namespace std;
-int main()
-{
-    // Задано три цілих числа: A, B, C. Перевірити істинність висловлювання: «Хоча б одне з чисел A, B, C позитивне». 
-
-    int a, b, c;
-
-    cout << boolalpha << "Enter a, b, c in order: ";
-    cin >> a >> b >> c;
-    cout << "The statement is ";
-        (a > 0 || b > 0 || c >> 0) ? cout << true : cout << false;
-    cout << endl;
-
-    cout << "The statement is " << (a > 0 || b > 0 || c >> 0);
-
-    // 67
+int main() {
+   
+    string alphabet1 = "АБВГДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯ";
+    string alphabet2 = "МНОПРСТУФХЦЧШЩЬЮЯАБВГДЕЄЖЗИЇЙКЛ";
+	string text = "ЕЯШТГШЮДУЕЯЧЄЧКВВТБШФМЦВЕБВРБЧИШТУЬЮОБЄВДШРЕЛЮВЩЄУ ВДШЩАБВХЧБПЖРДВЦСЯНТАБВХЧБЧНЮБВРВСВЕОАВЕЄШЬБВСВВПФЮ ЄОАОЄУАОЄЧЇБВСВТВЕЯШТХУББНЄВАЖБУВПИШТБВДВЦДШЦБНЄЧЄОЮ ШТРОДШЦБШВПФЮЄЧНЮУЯУАУБЄШАБВХЧБОНЮОЕЮЯОТОФЄЛЕНЦФТ ЧБВСВУЯУАУБЄОЦВЮДУАОАБВХЧБЧАВХЖЄЛРЧЕЄЖГОЄЧРДВЯШУЯУАУ БЄШРНЮВЩЕЛШБЙВЩАБВХЧБЧТДЖСЧЬЕГВЕШПЦОТОББНАБВХЧБСДЖБ ЄЖФЄЛЕНБОЦОЦБОЇУББШЦОСОЯЛБВЩРЯОЕЄЧРВЕЄШОПВГВДВТХЖРОЯ ЛБВЩГДВІУТЖДЧТЯНРЕШИВПФЮЄШРКВЖЄРВДММЄЛВГЧЕЖРОБЖАБВХ ЧБЖЄОЮЧЬРЧДОЦЇЧЄОФЄЛЕНЄОЮАБВХЧБОРЕШИЄОЮЧИУЯУАУБЄШРТЯ ННЮЧИРЧЮВБЖФЄЛЕНРЯОЕЄЧРШЕЄЛЦОЦБОЇУБЖРЯОЕЄЧРШЕЄЛАОМЄЛ РЕШУЯУАУБЄЧАБВХЧБЧШЄШЯЛЮЧРВБЧЦОАШЕЄЛРУДЄЧЮОЯЛБВЩДЧЕ ЮЧШБВТШЦОГЧЕЖМЄЛТРВЮДОГЮЖІУЬЕГВЕШПФПШЯЛЙЦОСОЯЛБЧАЕ ГВЕВПВАЦОТОББНАБВХЧБ";
+	
+	for(int i = 0; i < alphabet1.length(); i++)
+	{
+		replace(text.begin(), text.end(), alphabet1[i], alphabet2[i]);
+	}
+	cout << text;
+    return 0;
 }
