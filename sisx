@@ -1,0 +1,41 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+
+using namespace std;
+
+class Object
+{
+    static int count;
+    
+    const float NUMBER;
+    const char SYMBOL;
+   
+    
+    public:
+    
+    static void CountIncrement();
+    
+    void Print() const 
+    {
+        // NUMBER = 28;
+        cout << "count: " << count << " number: " << NUMBER << " symbol: " << SYMBOL;
+    }
+    
+    friend FreundFunction();
+    
+    void Un
+};
+
+int Object::count = 0;
+
+int main() {
+    int s = 67;
+    cin >> s;
+    constexpr int DAYS_OF_YEAR = 365;
+    const int RUNTIME_CONST = s;
+    
+    // DAYS_OF_YEAR = s;
+    
+
+    return 0;
+}
